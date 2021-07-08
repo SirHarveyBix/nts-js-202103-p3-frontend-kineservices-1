@@ -1,8 +1,11 @@
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext, useHistory } from 'react';
 import axios from 'axios';
+import { TokenContext } from '../../contexts/TokenContext';
 import './Profile.css';
 
 function Profile() {
+  const { setToken } = useContext(TokenContext);
+  const history = useHistory();
   const [user, setUser] = useState(null);
   const [updateUser, setUpdateUser] = useState({
     RPPS: '',
@@ -47,6 +50,11 @@ function Profile() {
   // updateUser : preaparation de la route de mise a jour du profile
   console.log(updateUser);
 
+  const handleLogout = () => {
+    localStorage.removeItem('TOKEN');
+    setToken(null);
+    history.push('/login');
+  };
   useEffect(() => {
     getUser();
     putUser();
@@ -91,6 +99,9 @@ function Profile() {
         </button>
         <button type="button" className="bouton">
           Partager mes services
+        </button>
+        <button onClick={handleLogout} type="button" className="bouton">
+          Deconexion
         </button>
       </div>
     </div>

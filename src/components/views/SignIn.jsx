@@ -1,20 +1,23 @@
 import axios from 'axios';
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
+import { useHistory } from 'react-router-dom';
 import { Card, Form, Col } from 'react-bootstrap';
 import background from '../../media/backgroundkine.png';
+import { TokenContext } from '../../contexts/TokenContext';
 import './SignIn.css';
 
 export default function SignIn() {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
-
+  const { token, setToken } = useContext(TokenContext);
+  const history = useHistory();
   const handlePassword = (event) => {
     setPassword(event.target.value);
   };
   const handleEmail = (event) => {
     setEmail(event.target.value);
   };
-
+  console.log(token);
   const handleSubmit = (event) => {
     event.preventDefault();
     axios
@@ -25,9 +28,11 @@ export default function SignIn() {
       .then((results) => {
         localStorage.setItem('USERID', results.data.user.id);
         localStorage.setItem('TOKEN', results.data.token);
+        setToken(results.data.token);
+        history.push('/utilisateur');
       });
   };
-
+  console.log(token);
   return (
     <div className="container-all">
       <img className="background" src={background} alt="background" />
