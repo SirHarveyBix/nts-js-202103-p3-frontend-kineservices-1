@@ -1,17 +1,13 @@
 import React from 'react';
-import GeneralRouter from './components/commons/GeneralRouter';
+// import GeneralRouter from './components/commons/GeneralRouter';
 import GlobalSearch from './components/views/GlobalSearch';
-import FormationForm from './components/views/FormationForm';
-import FormationItem from './components/views/FormationItem';
-import FormationList from './components/views/FormationList';
+// import FormationForm from './components/views/FormationForm';
+// import FormationItem from './components/views/FormationItem';
+// import FormationList from './components/views/FormationList';
 
 function App() {
   return (
     <div className="App">
-      <FormationForm />
-      <FormationList />
-      <FormationItem />
-      <GeneralRouter />
       <GlobalSearch />
     </div>
   );

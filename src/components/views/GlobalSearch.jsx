@@ -1,14 +1,17 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 
 function GlobalSearch() {
   const [search, setSearch] = useState('');
-  axios
-    .post(`${process.env.REACT_APP_BACKEND_URL}/globalSearch`, { search })
-    .then((results) => {
-      console.log(results);
-    });
   console.log(search);
+
+  useEffect(() => {
+    axios
+      .get(`${process.env.REACT_APP_BACKEND_URL}/globalSearch`, { search })
+      .then((results) => {
+        console.log(results);
+      });
+  }, []);
   return (
     <div>
       <input
