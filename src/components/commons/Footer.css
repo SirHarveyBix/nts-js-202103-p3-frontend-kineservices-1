@@ -8,12 +8,13 @@
   grid-template-columns: 1fr 3fr;
   grid-template-rows: 1fr, 1fr;
   background-color: #ffe400;
+  width:100%;
 }
 
 .networkLink {
   grid-column: 1;
   grid-row: 1;
-  margin-left: 2.5vw;
+  margin-left: .5vw;
 }
 
 .titleKine {
@@ -29,12 +30,14 @@
 .credits {
   grid-column: 2;
   grid-row: 1;
-  margin-top: 4vw;
+  margin-top: 2vw;
+  line-height: 20px;
 }
 
 .adress {
   margin-left: 2.5vw;
   margin-top: 1vw;
+  line-height: 20px;
 }
 
 .conditions {
@@ -42,18 +45,24 @@
   grid-column: 1/3;
   grid-row: 2;
   text-align: center;
-  line-height: 20px;
+  line-height: 18px;
+  padding-bottom:8vw;
 }
-
+.conditionElement {
+margin:1vw;
+}
 .disc{
   visibility:hidden;
 }
 @media screen and (min-width: 768px) {
+  .footer {height:15%;
+  }
   .networkLink {
     display: grid;
     grid-template-columns: 2fr 1fr 1fr 1fr 3fr;
     grid-template-rows: 1;
     margin-left: 4vw;
+    margin-bottom:2vw;
   }
 
   .titleKine {
@@ -68,15 +77,17 @@
   .credits {
     margin-top: 0.5vw;
     text-align: right;
-    margin-right: 2vw;
   }
-
+.adress{
+  margin-right:2vw;
+}
   .adress br {
     display: none;
   }
 
   .conditions {
     list-style-type: disc;
+    padding-bottom:4vw;
   }
 
   .conditionElement {
