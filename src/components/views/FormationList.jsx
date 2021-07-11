@@ -1,6 +1,7 @@
 import axios from 'axios';
 import React, { useState, useEffect } from 'react';
 import FormationItem from './FormationItem';
+import './FormationList.css';
 
 function FormationList() {
   const [formations, setFormations] = useState([]);
@@ -14,6 +15,7 @@ function FormationList() {
   });
   return (
     <div>
+      <h1 className="titreFormation">Liste des formations</h1>
       {formations.map((formation) => {
         return (
           <FormationItem

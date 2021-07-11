@@ -1,0 +1,23 @@
+.titreFormation {
+  text-align: center;
+  color: black;
+  text-shadow: 2px 2px 2px gainsboro;
+  padding: 20px;
+}
+
+.price {
+  font-weight: bold;
+}
+.categorie {
+  font-size: 1em;
+  text-decoration: underline;
+}
+
+.description {
+  background-color: white;
+  box-shadow: 2px 2px 2px grey;
+}
+
+.title {
+  text-shadow: 2px 2px 2px black;
+}
