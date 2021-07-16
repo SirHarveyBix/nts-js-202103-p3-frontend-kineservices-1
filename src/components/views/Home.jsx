@@ -1,8 +1,8 @@
 import React from 'react';
 import './Home.css';
 import { Link } from 'react-router-dom';
-import Footer from '../commons/Footer';
-import Carousel from '../commons/Carousel';
+import Footer from '../commons/footer/Footer';
+import Carousel from '../commons/carousel/Carousel';
 
 export default function Home() {
   return (

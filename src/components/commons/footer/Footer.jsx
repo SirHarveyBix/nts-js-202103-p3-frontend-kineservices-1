@@ -1,7 +1,7 @@
-import './Footer.css';
-import Facebook from '../../media/facebook.svg';
-import Insta from '../../media/instagram.svg';
-import Twitter from '../../media/twitter.svg';
+import './style/Footer.css';
+import Facebook from '../../../media/facebook.svg';
+import Insta from '../../../media/instagram.svg';
+import Twitter from '../../../media/twitter.svg';
 
 const Footer = () => {
   return (

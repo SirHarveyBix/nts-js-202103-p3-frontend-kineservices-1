@@ -1,6 +1,6 @@
 /* eslint-disable react/prop-types */
 import React from 'react';
-import './SearchContent.css';
+import './style/SearchContent.css';
 
 function SearchContent(props) {
   const { setSearchValue, searchValue } = props;

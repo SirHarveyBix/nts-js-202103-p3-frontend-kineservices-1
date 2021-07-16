@@ -1,10 +1,10 @@
 /* eslint-disable jsx-a11y/no-static-element-interactions */
 /* eslint-disable jsx-a11y/click-events-have-key-events */
 import React, { useState } from 'react';
-import './Carousel.css';
+import './style/Carousel.css';
 import ArrowBackIosIcon from '@material-ui/icons/ArrowBackIos';
 import ArrowForwardIosIcon from '@material-ui/icons/ArrowForwardIos';
-import { images } from './CarouselInfo';
+import { images } from '../carousel-info/CarouselInfo';
 
 function Carousel() {
   const [currentImage, setCurrentImage] = useState(0);

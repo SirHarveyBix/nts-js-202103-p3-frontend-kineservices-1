@@ -1,11 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import document from '../../media/document.png';
-import explorer from '../../media/explorer.svg';
-import service from '../../media/service.svg';
-import formation from '../../media/formation.svg';
-import profil from '../../media/profil.svg';
-import './NavBar.css';
+import document from '../../../media/document.png';
+import explorer from '../../../media/explorer.svg';
+import service from '../../../media/service.svg';
+import formation from '../../../media/formation.svg';
+import profil from '../../../media/profil.svg';
+import './style/NavBar.css';
 
 function NavBar() {
   return (

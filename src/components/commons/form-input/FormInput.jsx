@@ -1,5 +1,5 @@
 import React from 'react';
-import './FormInput.css';
+import './style/FormInput.css';
 
 // eslint-disable-next-line react/prop-types
 function FormInput({ label, name, type, value = {}, setValue }) {

@@ -3,9 +3,9 @@ import axios from 'axios';
 import React, { useEffect, useState } from 'react';
 import { useHistory } from 'react-router-dom';
 import Swal from 'sweetalert2';
-import FormInput from '../commons/FormInput';
+import FormInput from '../form-input/FormInput';
 
-import './DocumentationForm.css';
+import './style/DocumentationForm.css';
 
 function DocumentationForm() {
   const [select, setSelect] = useState([]);

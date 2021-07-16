@@ -1,6 +1,6 @@
-import feet from '../../media/feet.jpg';
-import dos from '../../media/dos.jpg';
-import cou from '../../media/cou.jpg';
+import feet from '../../../media/feet.jpg';
+import dos from '../../../media/dos.jpg';
+import cou from '../../../media/cou.jpg';
 
 // eslint-disable-next-line import/prefer-default-export
 export const images = [
